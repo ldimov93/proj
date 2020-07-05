@@ -1,0 +1,199 @@
+// imports
+@import "partials/bs", "../../node_modules/bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: "adelle-regular";
+  src: url("../fonts/Adelle_Reg.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "adelle-light";
+  src: url("../fonts/Adelle_light.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "showg";
+  src: url("../fonts/SHOWG.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "fa-solid-900";
+  src: url("../css/font-awesome/webfonts/fa-solid-900.woff2") format("woff2");
+}
+
+// mobile-first media queries
+body {
+  background: white;
+ 
+}
+
+// desktop-first media queries
+/*
+body {
+  background: $yellow;
+  @include media-breakpoint-down(lg) {
+    background: $teal;
+  }
+  @include media-breakpoint-down(md) {
+    background: $red;
+  }
+  @include media-breakpoint-down(sm) {
+    background: $green;
+  }
+  @include media-breakpoint-down(xs) {
+    background: $cyan;
+  }
+}*/
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 70px;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+body {
+  font-family: adelle-regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.page-header {
+  background-color: #022929;
+}
+
+a {
+  color: white;
+}
+a:hover {
+  color: white;
+}
+
+/* .dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+} */
+
+.nav-item {
+  background-color: #066666;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: white;
+}
+
+.dropdown-menu {
+  margin: 0;
+  padding: 0;
+  background-color: #066666;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-divider {
+  margin: 0;
+}
+
+.navbar-brand,
+#fixed-logo {
+  font-family: "showg";
+  background-color: #066666;
+}
+
+.navbar-brand {
+  padding: 0.5rem 1rem 0;
+  margin-right: 0;
+}
+
+#fixed-logo {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  color: white;
+  position: sticky;
+  bottom: 88px;
+}
+
+.navbar-toggler {
+  background-color: #066666;
+}
+
+@media screen and (max-width: 768px) {
+  #fixed-logo {
+    display: none;
+  }
+}
+
+.navbar {
+  padding: 0.5rem 1rem 0;
+}
+
+.section--left {
+  color: white;
+  background-color: #1e3a3a;
+  border: 5px solid #066666;
+
+  p {
+    font-family: adelle-light, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+  }
+}
+
+.section--right {
+  color: white;
+  background-color: #022929;
+  border: 5px solid #055252;
+}
+
+footer {
+  color: white;
+  background-color: #066666;
+}
+
+@media screen and (max-width: 768px) {
+  .page-header {
+    background-color: #066666;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  footer {
+    font-size :0.8rem;
+  }
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.btn-share {
+  margin-right: 10px;
+  background-color: #848484;
+  padding: 0.75rem 0.75rem;
+}
+
+.fa-envelope {
+  color: white;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.carousel-item {
+  height: 200px;
+  padding-top: 90px;
+  background-color: gray;
+}
