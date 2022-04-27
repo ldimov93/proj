@@ -2,7 +2,7 @@
   "name": "grunt-template",
   "version": "1.0.0",
   "devDependencies": {
-    "grunt": "^1.2.0",
+    "grunt": "^1.5.2",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-connect": "^2.0.0",
     "grunt-contrib-uglify": "^4.0.1",
